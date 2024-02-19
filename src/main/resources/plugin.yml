@@ -1,0 +1,37 @@
+name: OffChat
+version: '${project.version}'
+main: vanya.offchat.OffChat
+api-version: 1.19
+authors: [ vata_ot_nata ]
+description: Deactivate chat
+commands:
+  me:
+    description: do something
+    usage: /me <action>
+    permission: rppack
+  b:
+    description: clarify nrp question
+    usage: /b <nrp question>
+    permission: rppack
+  try:
+    description: try do something
+    usage: /try <action>
+    permission: rppack
+  roll:
+    description: roll number between 0 and 10
+    usage: /roll
+    permission: rppack
+  checkname:
+    description: check nickname of player by rc
+    usage: /checkname
+    permission: checkname
+  tell:
+    aliases:
+      - w
+      - msg
+    permission: op
+
+permissions:
+  rppack:
+    default: true
+
